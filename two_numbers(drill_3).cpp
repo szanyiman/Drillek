@@ -10,6 +10,8 @@ int main()
 	vector<double> v;
 while(cin >> n1 >> unit)
 {
+	if(unit=="cm" || unit=="m" || unit=="in" || unit=="ft")
+	{
 	if(n1>prevla) {prevla=n1; cout << "the largest so far\n";}
 	if(n1<prevsm) {prevsm=n1; cout << "the smallest so far\n";}
 	if(unit == "cm") {sum += (n1/100);valnum++;v.push_back(n1/100);}
@@ -21,10 +23,12 @@ while(cin >> n1 >> unit)
 	if(n1<n2) cout << "the larger value is: " << n2 << "\n" "the smaller value is: " << n1 << endl;
 	if(n1==n2) cout << "a két szám egyenlő\n"; 
 	if(abs(n1-n2)<=0.01) cout << "the numbers are almost equal\n";*/
+	}
+	else {cout << "This is an incorrect value! Please try again!" <<endl;}
 	cout << "Enter an integer number: \n";
 }
-	cout << "the largest value: " << prevsm << endl;
-	cout << "the smallest value: " << prevla << endl;
+	cout << "the largest value: " << prevla << endl;
+	cout << "the smallest value: " << prevsm << endl;
 	cout << "the value's sum: " << sum << " meters" << endl;
 	cout << "the number of values: " << valnum << endl;
 	cout << "the given values converted to meters: ";
