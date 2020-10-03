@@ -16,7 +16,7 @@ string s3="ape"; if(s3!="fool") cout<<"12. Success!\n"; // string s="ape"; if(s+
 vector<char> v2(5); for (int i=0; i<v2.size();++i);cout<<"13. Success!\n"; // vector<char> v(5); for (int i=0; 0<v.size();++i);cout<<"Success!\n"; - hibás ciklus
 vector<char> v3(5); for(int i=0; i<=v3.size();++i);cout<<"14. Success!\n"; // vector<char> v(5); for(int i=0;i<=v.size();++i);cout<<"Success!\n"; - nem találtam hibát
 string s4="15. Success!\n"; for (int i=0;i<6;++i); cout<<s4; // string s="Success!\n"; for(int i=0; i<6; ++i) cout<<s[i]; - hibás kiíratás
-if(true)cout<<"16. Success'\n";else cout<<"Fail!\n"; // if(true) then cout<<"Success!\n";else cout<<"Fail!\n"; - nem kell "then"
+if(true)cout<<"16. Success!\n";else cout<<"Fail!\n"; // if(true) then cout<<"Success!\n";else cout<<"Fail!\n"; - nem kell "then"
 int x=2000; int c2=x; if(c2==2000) cout<<"17. Success!\n"; // int x=2000; char c=x; if(c==2000) cout<<"Success!\n"; - nem találtam hibát
 string k="18. Success!\n";for (int i=0;i<10;++i); cout<<k; // string í="Success!\n";for (int i=0;i<10;++i) cout<<s[i]; - helytelen változónév
 vector<int> v4(5);for (int i=0;i<=v4.size();++i);cout<<"19. Success!\n"; // vector v(5);for (int i=0;i<=v.size();++i);cout<<"Success!\n"; - vektor típus hiányzik
